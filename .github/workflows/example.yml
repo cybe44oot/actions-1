@@ -8,9 +8,9 @@ jobs:
         steps:
         - name: checkout repo
           uses: actions/checkout@v4
-        - name: welcome messege
-          run: echo "my action"
-        - name: list files
-          run: ls
-        - name: cat file
-          run: cat README.md
+        - name: list and view
+          run: |
+            echo "my action"
+            ls -la
+            cat README.md
+     

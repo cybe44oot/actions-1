@@ -10,11 +10,10 @@ jobs:
     - name: checkout repo
       uses: actions/checkout@v4
 
-    - name: install cowsay
-      run: sudo apt-get install cowsay -y
+    - name: list
+      run: ls -latr  
 
-    - name: excute cowsay
-      run: cowsay -f dragon "run for covrt,,,arrr" >> dragon.txt
-      
-    - name: read file
-      run: cat dragon.txt
+    - name: excuting shell
+      run: |
+        chmod +x ascii.sh
+        ./ascii.sh

@@ -13,4 +13,7 @@ jobs:
             echo "my action"
             ls -la
             cat README.md
+
+        - name: ascii art work
+          run: cowsay -f dragon "run for covrt,,,arrr" >> dragon.txt
      

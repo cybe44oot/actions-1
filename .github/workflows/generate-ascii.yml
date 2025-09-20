@@ -11,7 +11,7 @@ jobs:
       run: sudo apt-get install cowsay -y 
     
     - name: excute cowsay program 
-      run: cowsay -f dragon "run for cover human!" >> dragon.txt 
+      run: cowsay -f dragon "iam the dragon run for cover human!" >> dragon.txt 
 
     - name: sleep for 30 second 
       run: sleep 30
